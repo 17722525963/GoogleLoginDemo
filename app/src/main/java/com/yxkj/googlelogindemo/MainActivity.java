@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         GoogleSignInOptions gso = new GoogleSignInOptions
                 .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
+//                .requestId()  //如果只选择这一项  不选择requestIdToken 可以登录成功 但获取不到token
                 .requestIdToken("826784281808-6uu2t2jlm8k6sbqsqq0or0l2geh0eia5.apps.googleusercontent.com")
                 .build();
 
